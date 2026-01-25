@@ -6,11 +6,11 @@ int main(){
 
 	int i,j;
 	for(i=0;i<SIZE-1;i++){
-		for(j=i+1;j<SIZE;j++){
-			if(arr[i]>arr[j]){
-				int temp=arr[i];
-				arr[i]=arr[j];
-				arr[j]=temp;
+		for(j=0;j<SIZE-i-1;j++){
+			if(arr[j] > arr[j+1]){
+				int temp = arr[j];
+				arr[j] = arr[j+1];
+				arr[j+1] = temp;
 			}
 		}
 	}
